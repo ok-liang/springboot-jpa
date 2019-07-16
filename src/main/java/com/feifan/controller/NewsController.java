@@ -14,7 +14,11 @@ public class NewsController {
                 "<h1 id=\"h1-aaaa\"><a name=\"AAAA\" class=\"reference-link\"></a><span class=\"header-link octicon octicon-link\"></span>AAAA</h1>";
     }
 
-
+    /**
+     * 接收发布的新闻，提交什么新闻，回复什么新闻。
+     * @param text
+     * @return
+     */
     @PostMapping("/addNews")
     public String saveNews(String text){
         System.out.println(text);
